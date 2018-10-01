@@ -1,0 +1,10 @@
+2018-09-30 18:19:32.973 {DEBUG} {org.hibernate.validator.internal.engine.resolver.TraversableResolvers - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolverag
+2018-09-30 18:19:32.979 {DEBUG} {org.hibernate.validator.internal.engine.resolver.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.ag
+2018-09-30 18:19:32.983 {DEBUG} {org.hibernate.validator.internal.xml.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.ag
+2018-09-30 18:19:32.984 {DEBUG} {org.hibernate.validator.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCLag
+2018-09-30 18:19:32.989 {DEBUG} {org.hibernate.validator.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loaderag
+2018-09-30 18:19:32.991 {DEBUG} {org.hibernate.validator.internal.xml.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.ag
+2018-09-30 19:11:54.644 {DEBUG} {org.hibernate.validator.internal.xml.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.ag
+2018-09-30 19:11:54.652 {DEBUG} {org.hibernate.validator.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCLag
+2018-09-30 19:11:54.652 {DEBUG} {org.hibernate.validator.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loaderag
+2018-09-30 19:11:54.652 {DEBUG} {org.hibernate.validator.internal.xml.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.ag
