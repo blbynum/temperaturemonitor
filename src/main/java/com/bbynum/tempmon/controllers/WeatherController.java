@@ -29,6 +29,7 @@ public class WeatherController {
 
     @GetMapping("/get-temp")
     @ResponseBody
+    @CrossOrigin
     public ResponseEntity retrieveWeather() {
         log.info("WeatherController::retrieveWeather Request received - processing");
         return ResponseEntity.ok(weatherRepository.findTopByOrderByDateDesc());
