@@ -1,1 +1,5 @@
-Test
+# Temperature Monitor
+
+I wrote this Spring Boot service to monitor the temperature in my room. Why? No real reason. I just thought it would be fun. It's a tad insecure right now, so don't talk about it's weight, and please don't go and insert random values into my database via this rest service, and *whatever* you do, don't take the password from my .properties file and truncate my database. Thank you for being so kind while I get around to making this application secure in any way whatsoever.
+
+The function of this rest service is to put temperature/humidity values into a MySQL database or to return them. If you're wonderng where the values are coming from, I have a raspberry pi plugged in, in my room with a DHT11 Temperature/Humidity Sensor attached to the GPIO pins. The pi is running a Python script that reads the temperature and humidity every 15 minutes and then makes a call to this service to put them in the database. When another call is made, the last values are returned as a JSON response. If you'd like to see the latest temperature in my room, navigate to [my website, bbbynum.com](bbynum.com) and scroll down the the About Me section. The temperature and the time it was recorded will be listed after the second paragraph. 
