@@ -7,11 +7,11 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.io.ClassPathResource;
 
 @Configuration
-public class TempmonConfiguration {
+public class PropertySourceConfiguration {
 
 
         @Bean
-        @Profile("development")
+        @Profile("dev")
         public static PropertySourcesPlaceholderConfigurer developmentPropertyPlaceholderConfigurer() {
             String activeProfile = System.getProperty("spring.profiles.active", "dev");
             String propertiesFilename = "application-" + activeProfile + ".properties";
@@ -23,7 +23,7 @@ public class TempmonConfiguration {
         }
 
         @Bean
-        @Profile // The default
+        @Profile("prod")
         public static PropertySourcesPlaceholderConfigurer propertyPlaceholderConfigurer() {
             String activeProfile = System.getProperty("spring.profiles.active", "prod");
             String propertiesFilename = "application-" + activeProfile + ".properties";
